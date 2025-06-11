@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travip | Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Travip</h1>
+        <span class="today-date" id="todayDate"></span>
+        <nav class="menu-nav">
+            <a href="index.html">Map</a>
+            <a href="result.html">Hotels</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About us</a>
+        </nav>
+    </header>
+
+<main>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <div class="month-nav">
+                <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="current-month">June 2025</div>
+            <button class="btn">
+                <i class="fas fa-calendar-check"></i> Today
+            </button>
+        </div>
+
+        <div class="calendar-grid">
+            <div class="day-header">Sun</div>
+            <div class="day-header">Mon</div>
+            <div class="day-header">Tue</div>
+            <div class="day-header">Wed</div>
+            <div class="day-header">Thu</div>
+            <div class="day-header">Fri</div>
+            <div class="day-header">Sat</div>
+
+            <!-- Previous month days -->
+            <div class="calendar-day other-month">
+                <div class="day-number">28</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">29</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">30</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">31</div>
+            </div>
+
+            <!-- Current month days -->
+            <div class="calendar-day">
+                <div class="day-number">1</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">2</div>
+                <div class="event attraction">Beach Day</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">3</div>
+                <div class="event hotel">Grand Paradise Check-in</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">4</div>
+                <div class="event attraction">City Museum Tour</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">5</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">6</div>
+                <div class="event attraction">Sunset Cruise</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">7</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">8</div>
+                <div class="event">Travel to Mountains</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">9</div>
+                <div class="event attraction">Mountain Hike</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">10</div>
+            </div>
+            <div class="calendar-day today">
+                <div class="day-number">11</div>
+                <div class="event hotel">Seaside Resort</div>
+                <div class="event attraction">Water Sports</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">12</div>
+                <div class="event attraction">Wine Tasting</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">13</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">14</div>
+                <div class="event">Free Day</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">15</div>
+                <div class="event hotel">Mountain View Inn</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">16</div>
+                <div class="event attraction">National Park Visit</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">17</div>
+                <div class="event attraction">Hiking Adventure</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">18</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">19</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">20</div>
+                <div class="event">Travel Day</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">21</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">22</div>
+                <div class="event attraction">Historic City Tour</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">23</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">24</div>
+                <div class="event hotel">Grand Paradise</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">25</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">26</div>
+                <div class="event attraction">Cooking Class</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">27</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">28</div>
+                <div class="event">Spa Day</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">29</div>
+                <div class="event attraction">Farewell Dinner</div>
+            </div>
+            <div class="calendar-day">
+                <div class="day-number">30</div>
+                <div class="event hotel">Check-out</div>
+            </div>
+
+            <!-- Next month days -->
+            <div class="calendar-day other-month">
+                <div class="day-number">1</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">2</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">3</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">4</div>
+            </div>
+            <div class="calendar-day other-month">
+                <div class="day-number">5</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="attractions-sidebar">
+        <div class="sidebar-title">
+            <i class="fas fa-map-marked-alt"></i>
+            <h2>Top Attractions</h2>
+        </div>
+
+        <div class="attraction-item">
+            <div class="attraction-header">
+                <div class="attraction-name">Sunset Cruise</div>
+                <div class="attraction-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="attraction-details">
+                <div class="detail">
+                    <i class="fas fa-clock"></i> 5:30 PM - 7:30 PM
+                </div>
+                <div class="detail">
+                    <i class="fas fa-users"></i> 2 hours
+                </div>
+            </div>
+            <div class="attraction-price">$45 / person</div>
+            <div class="tag">Water Activity</div>
+        </div>
+
+        <div class="attraction-item">
+            <div class="attraction-header">
+                <div class="attraction-name">National Park Tour</div>
+                <div class="attraction-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="attraction-details">
+                <div class="detail">
+                    <i class="fas fa-clock"></i> 8:00 AM - 4:00 PM
+                </div>
+                <div class="detail">
+                    <i class="fas fa-users"></i> Guided Tour
+                </div>
+            </div>
+            <div class="attraction-price">$65 / person</div>
+            <div class="tag">Nature</div>
+        </div>
+
+        <div class="attraction-item">
+            <div class="attraction-header">
+                <div class="attraction-name">Historic City Museum</div>
+                <div class="attraction-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="attraction-details">
+                <div class="detail">
+                    <i class="fas fa-clock"></i> 9:30 AM - 6:00 PM
+                </div>
+                <div class="detail">
+                    <i class="fas fa-users"></i> Self-guided
+                </div>
+            </div>
+            <div class="attraction-price">$22 / person</div>
+            <div class="tag">Culture</div>
+        </div>
+
+        <div class="attraction-item">
+            <div class="attraction-header">
+                <div class="attraction-name">Mountain Hiking</div>
+                <div class="attraction-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="attraction-details">
+                <div class="detail">
+                    <i class="fas fa-clock"></i> Full Day
+                </div>
+                <div class="detail">
+                    <i class="fas fa-users"></i> Advanced
+                </div>
+            </div>
+            <div class="attraction-price">$85 / person</div>
+            <div class="tag">Adventure</div>
+        </div>
+
+        <div class="attraction-item">
+            <div class="attraction-header">
+                <div class="attraction-name">Wine Tasting Experience</div>
+                <div class="attraction-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="attraction-details">
+                <div class="detail">
+                    <i class="fas fa-clock"></i> 2:00 PM - 5:00 PM
+                </div>
+                <div class="detail">
+                    <i class="fas fa-users"></i> Groups of 6-12
+                </div>
+            </div>
+            <div class="attraction-price">$75 / person</div>
+            <div class="tag">Gourmet</div>
+        </div>
+    </div>
+</main>
+
+</body>
+
+</html>
